@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth Callback</title>
+</head>
+<body>
+    <h1>OAuth Callback</h1>
+    <p>You have been redirected here after OAuth authentication.</p>
+    <script>
+        // Handle the OAuth response
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        console.log('Authorization code:', code);
+    </script>
+</body>
+</html>
